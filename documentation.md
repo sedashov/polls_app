@@ -34,6 +34,7 @@ Note that if question_type is 1V or MV, you have to provide answer_choices in a 
 
 
 Endpoints accessible for everyone (even for unauthorized users):
+
 7) /polls/active/ Method: GET displays all active polls
 8) /polls/answer/ Method: POST requires fields user_id (may be blank to answer anonymously), poll_id, answers (dict {str(question_id): answer}, answers to all questions in a poll), writes an answer to a specified pool by a specified user
 Method: GET requires user_id and (optionally) poll_id, displays all user's answers to a specified poll (if poll_id is blank, to all polls)
